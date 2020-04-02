@@ -1,0 +1,247 @@
+NEW PAGE
+=================================================================================
+<form>
+<mat-card class="dash-board-container">
+   <mat-card-content>
+     <div class="page-title">User Reports</div>
+
+     <div fxLayout="row" fxLayout.xs="column">
+       <div fxFlex="100%">
+       </div>
+     </div>
+   </mat-card-content>
+    
+    <mat-card-actions align="end" class="mt-20 a-right">
+   <button type="button" mat-raised-button color="primary" class="mr-10">Save</button>
+   <button type="button" mat-raised-button mat-dialog-close>Close</button>
+ </mat-card-actions>
+
+</mat-card>
+</form>
+NEW POPUP PAGE
+=================================================================================
+<form>
+ <mat-card-content>
+   <div class="page-title mb-5">Interview</div>
+   <div fxLayout="row" fxLayout.xs="column">
+     <div fxFlex="100%">
+     </div>
+   </div>
+ </mat-card-content>
+
+ <mat-card-actions align="end"  class="mt-20 a-right">
+   <button type="button" mat-raised-button color="primary" class="mr-10">Save</button>
+   <button type="button" mat-raised-button mat-dialog-close>Close</button>
+ </mat-card-actions>
+</form>
+FORM ITEMS
+=================================================================================
+LABLE
+<div class="mat-row">
+             <div class="col-3 form-label">
+               Code <span class="mat-fr">:</span>
+             </div>
+             <div class="col-3 form-value">
+               Value
+             </div>
+             <div class="col-3 form-label">
+               Name <span class="mat-fr">:</span>
+             </div>
+             <div class="col-3 form-value">
+               Value
+             </div>
+           </div>
+INPUT
+<mat-form-field class="mat-width-full" appearance="outline">
+                   <mat-label>Name</mat-label>
+                   <input matInput placeholder="Name">
+                 </mat-form-field>
+SELECT
+<mat-form-field class="mat-width-full" appearance="outline">
+                   <mat-label>Status</mat-label>
+                   <mat-select placeholder="Status">
+                     <mat-option value="1">Active</mat-option>
+                     <mat-option value="2">Inactive</mat-option>
+                     <mat-option value="3">Active</mat-option>
+                   </mat-select>
+                 </mat-form-field>
+TEXTAREA
+<mat-form-field class="mat-width-full" appearance="outline">
+             <mat-label>Description</mat-label>
+             <textarea matInput placeholder="Description" rows="5"
+                       class="text-area-resize-disable"></textarea>
+           </mat-form-field>
+DATE
+<mat-form-field class="mat-width-full ie-edge-date-pick" appearance="outline">
+        <mat-label>From</mat-label>
+            <input matInput [matDatepicker]="picker1" placeholder="Date of birth">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+MAT-TEXTAREA
+=================================================================================
+<mat-form-field class="mat-width-full" appearance="outline">
+             <mat-label>Description</mat-label>
+             <textarea matInput placeholder="Description" rows="5"
+                       class="text-area-resize-disable"></textarea>
+           </mat-form-field>
+
+
+LIST-ATTACHMENT
+=================================================================================
+
+class="list-attachment"
+
+  .list-attachment .mat-list-item:nth-child(odd) {
+  background-color: #fafbfc;
+  border-top: 1px solid #ecf0f1;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.list-attachment .mat-list-item:nth-child(even) {
+  background-color: #ffffff;
+}         
+
+COLOUR-TAB
+=================================================================================
+class="full-records"
+
+.full-records {
+  background-color: #e7f0ff;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+Drag-Scroll
+=================================================================================
+
+  <drag-scroll style="width: 1420px; height: 300px;" #dragScroll>
+    <div fxLayout="row" fxLayout.xs="column">
+      <div fxFlex="100%">
+ 
+
+        </div>
+      </div>
+    </div>
+  </drag-scroll>
+
+
+  <div align="end" class="mt-10">
+    <span> 3 Records retrieved </span>
+    <button type="button" mat-mini-fab title="Left" (click)="moveLeft()" class="mr-10 btn-left" color="primary">
+      <mat-icon svgIcon="left"></mat-icon>
+    </button>
+    <button type="button" mat-mini-fab title="Right" (click)="moveRight()" class="mr-10 btn-right" color="primary">
+      <mat-icon svgIcon="right"></mat-icon>
+    </button>
+  </div>
+
+
+DIV for empty
+=================================================================================
+
+<!--Note: Use this DIV for empty CL details-->
+          <div class="no-cl-details">
+            <div style="vertical-align: middle">Please add or edit enforcement to view details</div>
+          </div>
+.no-cl-details {
+  color: #4C4C4C;
+  background-color: #FAFBFC;
+  border: 1px solid #ECF1F2;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: center;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+Button color disable 
+=================================================================================
+.ico-mini-fab-delete[disabled] {
+  background-color: rgb(224, 224, 224) !important;
+  color: #ffffff;
+}
+
+Flax Layout Guit lines
+=================================================================================
+
+Responsive code:   fxLayout.sm="column"
+
+  <div  fxLayout="row" fxLayoutWrap fxLayoutGap="0.5%">
+    <div fxFlex="50%" style="border: 1px solid red;">50</div>
+    <div fxFlex="50%" style="border: 1px solid red;">
+      <div  fxLayout="row">
+        <div fxFlex="50%" style="border: 1px solid blue;">
+      
+
+        </div>
+        <div fxFlex="50%" style="border: 1px solid blue;">
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+=================================================================================
+
+ <div  fxLayout="column" fxLayoutWrap fxLayoutGap="0.5%">
+    <div fxFlex="50%" style="border: 1px solid red;">50</div>
+    <div fxFlex="50%" style="border: 1px solid red;">50</div>
+  </div>
+
+<div fxLayout="row">
+   <div fxFlex="20%" style="background-color: green; ">1  fxLayout="row"</div>
+   <div fxFlex="60%" style="background-color: orange; ">2  fxFlex="60%"</div>
+   <div fxFlex="20%" style="background-color: blue; ">3  fxFlex="20%"</div>
+</div>
+
+=================================================================================
+
+<div fxLayout="row" fxLayout.xs="column">
+ <div fxFlex="150px">
+
+ </div>
+ <div fxFlex="">
+   <div fxLayout="row" fxLayout.xs="column">
+     <div fxFlex="50%">
+     
+     </div>
+     <div fxFlex="50%">
+
+     </div>
+   </div>
+   <div fxLayout="row" fxLayout.xs="column">
+     <div fxFlex="50%">
+
+     </div>
+     <div fxFlex="50%">
+     
+     </div>
+   </div>
+ </div>
+</div>
+
+=================================================================================
+
+<div style="border: 1px solid green; max-width: 1000px !important; margin: 0 auto;">
+     <div fxLayout="row" fxLayout.xs="column">
+       <div fxFlex="50%" style="border: 1px solid red;">1</div>
+       <div fxFlex="50%" style="border: 1px solid red;">2</div>
+     </div>
+</div>
+
+=================================================================================
+
+<div fxLayout="row" fxLayout.xs="column">
+       <div fxFlex="50%" style="border: 1px solid red;">1</div>
+       <div fxFlex="50%" style="border: 1px solid red;">2</div>
+     </div>
+
+=================================================================================
+
+Reaponsive code: fxLayout.xs="column"
+xs, sm, md, lg, xl
